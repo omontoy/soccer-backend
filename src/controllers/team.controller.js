@@ -10,17 +10,5 @@ module.exports = {
     catch(err) {
       res.status(200).json({ message: err.message })
     }
-  },
-
-  async show(req, res) {
-    try {
-      const id = req.userId
-      const team = await Team.findById(id)
-
-
-    }
-    catch(err) {
-      
-    }
   }
 }
